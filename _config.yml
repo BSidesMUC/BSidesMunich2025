@@ -1,0 +1,124 @@
+
+# Site settings
+title: BSides Munich 2025
+subtitle: "A free security conference in the heart of Bavaria"
+repository: BSidesMUC/BSidesMunich2025
+
+url: "https://2025.bsidesmunich.org" # the base hostname & protocol for your site
+baseurl: ""
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
+
+# Build settings
+markdown: kramdown
+
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:title/
+#    /:collection/:title/index.html
+  workshops:
+    output: true
+    permalink: /:collection/:title/
+#    permalink: /:collection/:title
+  organizers:
+    output: false
+  sponsors:
+    output: false
+
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
+
+imprint:
+  name: "MUC:SEC e.V."
+  addressco: "c/o Kemetmüller"
+  address: "Hans-Sachs-Str 5.801, 80469 München"
+  email: "manager [at] bsidesmunich [dot] org"
+  #phone: "+49 89
+  chair: Christoph Kemetmüller
+  vicechair: Sneha Nitin Rajguru
+
+
+conference:
+  # contact e-mail, e.g., for sponsors
+  email: organizers@bsidesmunich.org
+  twitter: https://twitter.com/bsidesmunich
+  discord: https://discord.gg/RVWbAk5R6u
+  notice: 
+
+  sponsors:
+    contact: sponsors (at) bsidesmunich (dot) org
+    #show the sponsors in the footer of every page
+    lookingfor: false
+    footer: false #BETA
+    # sponsor logos should all have the same format (at least width)
+# uncomment it to fill sponsors in
+
+  links:
+    sponsorpackage_en_uri:  /files/BSidesMunich2025Sponsorship-English.pdf
+    sponsorpackage_de_uri:  # /files/BSidesMunich2025Sponsorship-Deutsch.pdf
+    cfp_uri: 
+    contickets_uri: 
+      
+  dates: 
+    deadline_tickets: 
+    deadline_cfp: 
+    workshops: 
+    conference: 
+  venue:
+    workshopsday:
+      address: 
+      details: ""
+      gps: 
+        lat:  
+        long:  
+    conferenceday:
+      address: 
+      details: ""
+      gps: 
+        lat: 
+        long: 
+
+  archive:
+    a2024:
+      title: "BSides Munich 2024"
+      participants: 364
+      presentations: 22
+      workshops: 6
+      hours: 40
+      website_uri: https://2024.bsidesmunich.org
+      recordings_uri: https://www.youtube.com/watch?v=osPEOGgkJjY&list=PL8N5HiRDvZ-ep6hwYBK4BjrmI2qV8Zl24
+      slider:
+      - src: img/slider-bg.png
+
+compress_html:
+  clippings: all
+  comments: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "Makefile"
+  - "INSTALL.txt"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+pre_build:
+  commands:
+    - export LC_ALL="C.UTF-8"
+    - export LANG="en_US.UTF-8"
+    - export LANGUAGE="en_US.UTF-8"
+
+plugins:
+  - "jekyll-github-metadata"
