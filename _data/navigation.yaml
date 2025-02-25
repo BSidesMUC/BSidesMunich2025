@@ -1,0 +1,14 @@
+- title: Home
+  url: /
+- title: Sponsors
+  url: /sponsors/
+#- title: Speakers
+#  url: /speakers/
+#- title: Agenda
+#  url: /agenda/
+#- title: Tickets
+#  url: /tickets/
+- title: Code of Conduct
+  url: /codeofconduct/
+- title: Organizers
+  url: /organizers/
