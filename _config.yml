@@ -89,7 +89,11 @@ conference:
       website_uri: https://2024.bsidesmunich.org
       recordings_uri: https://www.youtube.com/watch?v=osPEOGgkJjY&list=PL8N5HiRDvZ-ep6hwYBK4BjrmI2qV8Zl24
       slider:
-      - src: img/slider-bg.png
+      - src: img/slider2024/8bitlogo.png
+      - src: img/slider2024/iot_ws.jpg
+      - src: img/slider2024/sponsor.jpg
+      - src: img/slider2024/team.jpg
+      - src: img/slider2024/workshop.jpg
 
 compress_html:
   clippings: all
