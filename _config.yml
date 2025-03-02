@@ -68,13 +68,13 @@ conference:
   venue:
     workshopsday:
       address: 
-      details: ""
+      details: "TBD"
       gps: 
         lat:  
         long:  
     conferenceday:
       address: 
-      details: ""
+      details: "TBD"
       gps: 
         lat: 
         long: 
