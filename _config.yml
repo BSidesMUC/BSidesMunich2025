@@ -63,11 +63,11 @@ conference:
   dates: 
     deadline_tickets: 
     deadline_cfp: 2025-07-25
-    workshops: 
+    workshops: 2025-11-15
     conference: 2025-11-17
   venue:
     workshopsday:
-      address: 
+      address: "TBD"
       details: "TBD"
       gps: 
         lat:  
