@@ -64,7 +64,7 @@ conference:
     deadline_tickets: 
     deadline_cfp: 2025-07-25
     workshops: 
-    conference: 
+    conference: 2025-11-17
   venue:
     workshopsday:
       address: 
@@ -73,11 +73,11 @@ conference:
         lat:  
         long:  
     conferenceday:
-      address: 
-      details: "TBD"
+      address: Arabellastraße 6, 81925 München
+      details: "The Westin Grand Munich"
       gps: 
-        lat: 
-        long: 
+        lat: 48.1520938
+        long: 11.6149413
 
   archive:
     a2024:
