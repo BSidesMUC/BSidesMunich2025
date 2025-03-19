@@ -57,12 +57,12 @@ conference:
   links:
     sponsorpackage_en_uri:  /files/BSidesMunich2025Sponsorship-English.pdf
     sponsorpackage_de_uri:  # /files/BSidesMunich2025Sponsorship-Deutsch.pdf
-    cfp_uri: 
+    cfp_uri: https://pretalx.com/bsides-munich-2025/cfp
     contickets_uri: 
       
   dates: 
     deadline_tickets: 
-    deadline_cfp: 
+    deadline_cfp: 2025-07-25
     workshops: 
     conference: 
   venue:
