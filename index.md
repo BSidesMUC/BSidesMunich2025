@@ -1,6 +1,6 @@
 ---
 layout: textpage
-title: BSides Munich 2025 :: NEINth Edition
+title: BSides Munich 2025 - NEINth Edition
 
 show_map: true
 ---
