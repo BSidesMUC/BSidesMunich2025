@@ -61,6 +61,11 @@ a:active {
   max-height: 100px;
   max-width: 200px;
 }
+.sponsorlogos .sponsor-lanyard img {
+  margin: 30px 20px;
+  max-height: 80px;
+  max-width: 150px;
+}
 .sponsorlogos .sponsor-bronze img {
   margin: 30px 20px;
   max-height: 80px;
