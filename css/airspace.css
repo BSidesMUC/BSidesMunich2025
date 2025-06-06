@@ -97,6 +97,10 @@ a:active {
   }
 }
 
+.sponsor-lanyard > div {
+  width:100%;
+}
+
 .section-title h2 {
   text-transform: uppercase;
   font-size: 28px;
