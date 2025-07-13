@@ -2,10 +2,8 @@
 layout: textpage
 title: Eduardo
 name: Eduardo
-photo: 
+photo: img/organizers/edu.jpg
 handle: 
 ---
 
-Born in Guatemala, Eduardo embarked on an infosec journey, mastering web app security and pentesting. 
-After pursuing a Masters degree in Europe, he settled in Munich. 
-A devoted father, boulder conqueror, and video game enthusiast, Eduardo finds joy in snowboarding and safeguarding against digital threats.
+Eduardo was born in Guatemala and has been part of the organizing team for the past few years, after starting out as a volunteer. Based in Munich, he works on keeping complex systems secure and running smoothly. Outside of that, he enjoys bouldering, snowboarding, and most recently, the wild adventure of being a new dad.
