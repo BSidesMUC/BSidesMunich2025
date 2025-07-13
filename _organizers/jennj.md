@@ -2,7 +2,7 @@
 layout: textpage
 title: JennJ
 name: JennJ
-photo: 
+photo: img/organizers/jenn.png
 handle: jennjanesko
 ---
 
