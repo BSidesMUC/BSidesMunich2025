@@ -1,0 +1,43 @@
+---
+layout: default
+---
+ 
+<!-- Wrapper Start -->
+<section id="reviewers">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+      
+      {% for reviewer in site.reviewers %}
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 col-xs-8 col-xs-offset-3">
+          <div class="block speaker-image">
+      {% if reviewer.photo  %}
+            <img src="{{ reviewer.photo | relative_url }}">          
+      {% else %}
+            <img src="/img/nemo.png">
+      {% endif %}
+          </div>
+        </div>
+      
+        <div class="col-md-9 col-xs-12">
+          <div class="block">
+            <p>
+              <h2 id="{{ reviewer.name }}">{{ reviewer.title }}</h2>
+      {% if reviewer.handle %}
+          <a href="https://www.x.com/{{ reviewer.handle  }}" class="fa fa-twitter">@{{ reviewer.handle }}</a>          
+      {% endif %}
+            </p>
+      {{ reviewer.content | markdownify }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">&nbsp;</div>    
+      {% endfor %}  
+      </div>
+   </div>
+ 
+</div>
+</section>
