@@ -1,6 +1,6 @@
 ---
 layout: textpage
-title: JennJ
+title: Jennifer Janesko
 name: JennJ
 photo: img/reviewers/jenn.jpg
 handle: jennjanesko
