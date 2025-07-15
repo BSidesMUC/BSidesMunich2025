@@ -1,6 +1,6 @@
 ---
 layout: textpage
-title: Morton
+title: Morton Swimmer
 name: Morton
 photo: img/organizers/morton.jpg
 handle: 
