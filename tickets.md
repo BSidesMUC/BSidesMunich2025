@@ -14,10 +14,9 @@ Full access to the conference at no cost.  Tickets will be released in limited b
 * **Registration for the first batch of tickets will open on September 9, 2025 at 09:00 CEST.**  
 * Registration for the second batch of tickets will open on TBA.  
 * Registration for the third batch of tickets will open on TBA.  
-
 *Note: The waiting list will open with the last batch of tickets.*
 
-**Business Ticket – €595,00 incl. MwSt. (New this year!)**
+**Business Ticket – €595,00 incl. MwSt. (New this year!)**  
 We’ve introduced the Business Ticket this year for individuals and companies who want to give back and ensure the event stays free and accessible for the wider community. The Business Ticket is ideal for those attending through company funding or professional development budgets. Your contribution helps us cover essential costs (venue, logistics, and catering) so we can continue to deliver a high-quality, independent, and community-focused event.
  By purchasing a Business Ticket, you’re not just attending, you’re helping others attend too.  
 * **Registration for business tickets will open on July 21, 2025.**
