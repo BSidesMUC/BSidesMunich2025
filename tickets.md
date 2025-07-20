@@ -11,12 +11,11 @@ permalink: /tickets/
 
 BSides Munich is a free, community-driven cybersecurity conference bringing together professionals, researchers, and enthusiasts for a day of talks, networking, and knowledge sharing. The main Conference Day will feature high-quality presentations from local and international experts, covering a wide range of security topics.
 
-#### Ticket Options
 * **Regular Ticket – Free**  
 Full access to the conference at no cost.  Tickets will be released in limited batches on announced dates. Follow us on social media to secure yours!  
 **Registration for the first batch of tickets will open on September 9, 2025 at 09:00 CEST.**  
-**Registration for the first batch of tickets will open on TBA.**  
-**Registration for the first batch of tickets will open on TBA.**  
+**Registration for the second batch of tickets will open on TBA.**  
+**Registration for the third batch of tickets will open on TBA.**  
 The waiting list will open with the last batch of tickets.
 
 * **Business Ticket – €595,00 incl. MwSt. (New this year!)**  
@@ -26,8 +25,8 @@ We’ve introduced the Business Ticket this year for individuals and companies w
 
 ### Workshops
 
-Please take a look at the agenda for the scheduled workshops. Please note that there will be a fee of €19,00 incl. MwSt. for workshop participation this year. 
-
+In addition to the main conference, BSides Munich will host a Workshop Day featuring hands-on, in-depth sessions led by industry experts.
+Each seat costs €19,00 incl. MwSt. Workshops will run between 2 and 8 hours, depending on the topic. Coffee breaks and lunch are included. The full workshop schedule will be announced soon.  
 **Registration for the workshop tickets will open on TBA.**
 
 ## Questions
