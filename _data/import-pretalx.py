@@ -2,7 +2,6 @@
 
 import os
 import json
-import yaml
 
 import frontmatter
 from slugify import slugify
@@ -12,7 +11,7 @@ import dateutil.parser
 from pytz import timezone
 
 from pprint import pprint
-
+import mimetypes
 import requests
 
 from datetime import datetime
@@ -22,7 +21,7 @@ access_token_key = environ.get('ACCESS_TOKEN_KEY')
 
 HEADERS = {'Authorization': f'Token {access_token_key}'}
 
-bsides_event = "bsides-munich-2024"
+bsides_event = "bsides-munich-2025"
 
 def logging():
     import logging
@@ -44,6 +43,25 @@ def logging():
     requests_log.setLevel(logging.DEBUG)
     requests_log.propagate = True
 
+def get_speaker_image(speaker):
+    filepath = ''
+
+    if speaker['avatar_url'].strip():
+        with requests.Session() as s:
+
+            res = s.get(speaker['avatar_url'], stream=True)
+  
+            if res.status_code == 200:
+                content_type = res.headers['content-type']
+                ext = mimetypes.guess_extension(content_type)
+                filepath = f"img/speakers/{speaker['code']}{ext}"
+                
+                with open(f"{filepath}", "wb") as ifile:
+                    for chunk in res:
+                        ifile.write(chunk)
+
+    return filepath
+
 def main():
 
     #logging()
@@ -54,226 +72,142 @@ def main():
     with requests.Session() as s:
         s.headers = HEADERS
 
-        #res = s.get(f'https://pretalx.com/api/events/{event}/')
-        res = s.get(f'https://pretalx.com/api/me')
+        # Quick check to test if the token is working
+        res = s.get(f'https://pretalx.com/api/events/{event}/')
         jdata = res.json()
         
-        #pprint(res.json())
-
         if res.status_code == 401:
             print('401 - {}'.format(jdata['detail']))
             return
         
-
-        # Read speakers file, or download it.
-        speakers = None
-        filename = f'_data/{today}_speakers.json'
-        if os.path.isfile(filename):
-            with open(filename, 'r', encoding="utf8") as infile:
-                speakers = json.load(infile)
-
-        else:
-
-            #res = s.get(f'https://pretalx.com/api/events/{event}/')
-            #res = s.get(f'https://pretalx.com/api/me')
-            #jdata = res.json()
-            #pprint(res)
-            #pprint(jdata)
-
-            #res = s.get(f'https://pretalx.com/api/events/{event}/talks')
-            res = s.get(f'https://pretalx.com/api/events/{event}/speakers/')
-            print (res)
-            jdata = res.json()
-            jdata_speakers = jdata['results']
-            while 'next' in jdata and jdata['next'] is not None:
-                # load next page
-                pprint(jdata['next'])
-                res = s.get(jdata['next'])
-                jdata = res.json()
-                
-                jdata_speakers = jdata_speakers + jdata['results']
-            
-            #pprint(jdata_speakers)
-
-            filename = f'_data/{today}_speakers.json'
-            with open(filename, 'w', encoding="utf8") as outfile:
-                json.dump(jdata_speakers, outfile, indent=4, sort_keys=True)
-                
-                speakers = jdata_speakers
-
-
+        # Read sessions.
         sessions = None
         filename = f'_data/{today}_sessions.json'
         if os.path.isfile(filename):
+            print(f"Loading sessions from {filename} ... ", end="")
             with open(filename, 'r', encoding="utf8") as infile:
                 sessions = json.load(infile)
         else:
-
-            #res = s.get(f'https://pretalx.com/api/events/{event}/talks')
-            res = s.get(f'https://pretalx.com/api/events/{event}/submissions')
+            print("Loading sessions from Pretalx API ...", end="")
+            res = s.get(f'https://pretalx.com/api/events/{event}/submissions?expand=speakers,track,submission_type,slots.room')
             jdata = res.json()
             jdata_sessions = jdata['results']
-            while 'next' in jdata and jdata['next'] is not None:
-                # load next page
-                pprint(jdata['next'])
-                res = s.get(jdata['next'])
-                jdata = res.json()
-                
-                jdata_sessions = jdata_sessions + jdata['results']
             
-            #pprint(jdata_sessions)
+            while 'next' in jdata and jdata['next'] is not None:
+                print(".", end="")
+                res = s.get(jdata['next'])
+                jdata = res.json()               
+                jdata_sessions = jdata_sessions + jdata['results']
 
             sessions_filtered = []
+
+            # Keep only the ones in accepted or confirmed states with an assigned room.
             for session in jdata_sessions:
-                #pprint(session)
-                #pprint(session['state'])
-
-                if session['slot'] is None or session['slot']['room'] is None:
+                if not session['slots']:
                     continue
-                elif session['state'] == 'accepted':
+                elif session['state'] in ['accepted', 'confirmed']:
                     sessions_filtered.append(session)
-                elif session['state'] == 'confirmed':
-                    sessions_filtered.append(session)
-                elif session['state'] == 'rejected':
+                elif session['state'] in ['rejected', 'submitted', 'withdrawn', 'canceled']:
                     continue
-                elif session['state'] == 'submitted':
-                    continue
-                elif session['state'] == 'withdrawn':
-                    continue
-                elif session['state'] == 'canceled':
-                    continue
-
                 else:
-                    pprint(session)
                     pprint(session['state'] )
+                    print("[!] Check session state")
                     input()
-
+   
             with open(filename, 'w', encoding="utf8") as outfile:
                 json.dump(sessions_filtered, outfile, indent=4, sort_keys=True)
-
                 sessions = sessions_filtered
 
+    print(f" loaded {len(sessions)} sessions.")
+
+    # get session speaker photos
+    speaker_photos = {}
+
+    for session in sessions:
+        for speaker in session['speakers']:
+            if speaker['code'] in speaker_photos:
+                pass
+            else:
+                filepath = get_speaker_image(speaker)
+                speaker_photos[speaker['code']] = filepath
+
+    # sort sessions and generate files.
     track_cnt = {}
 
-    # Testing
-    for session in sessions:
-        #print(session['slot'])
-        
-        if session['slot'] is None:
-            pprint(session)
-            
-    #newlist = sorted(list_to_be_sorted, key=lambda d: d['name']) 
-    #sessions_sorted = sorted(sessions, key=lambda d: d['Start']) 
-    sessions_sorted = sorted(sessions, key=lambda d: d['slot']['start']) 
+    sessions_sorted = sorted(sessions, key=lambda d: d['slots'][-1]['start']) 
     for session in sessions_sorted:
-        #pprint(session)
-        
-        metadata = yaml.dump(session)
-        session_str = f'---\n{metadata}\n---\n{session["abstract"]}'
-        #print(session_str)
-        #post = frontmatter.loads(session_str)
+        print(session['submission_type']['name']['en'], end=": ")
+
+        session_type = session['track']['name']['en']
+        if session_type in ['Talks', 'Workshops']:
+            session_type = session_type.lower()[:-1]
+        else:
+            print(f"[!] Unrecognized track: {session_type}")
+            input()
+
         post = frontmatter.loads('')
-        #print(post)
-        post_abstract = session['abstract']
-        post_abstract = post_abstract.replace('. ', '.\n')
-        post_abstract = post_abstract.replace('\r\n', '\n')
-        post_description = session['description']
-        post_description = post_description.replace('. ', '.\n')
-        post_description = post_description.replace('\r\n', '\n')
-        
-        post.content = post_abstract
-        #post.content = post_abstract + '\n\n' + post_description
-        #post.content = post.content + '\n\n' + session['Description'].replace('. ', '.\n')
+        post.content = session['abstract'].replace('. ', '.\n').replace('\r\n', '\n')
 
-        print(session['submission_type'])
-        post['layout'] = session['submission_type']['en'].lower().split(" ")[0]
+        post['layout'] = session_type
 
-        if post['layout'] == 'talks':
-            post['layout'] = 'talk'
-
-        if session['state'] == 'accepted':
-            post['accepted'] = True
-        elif session['state'] == 'confirmed':
-            post['accepted'] = True
+        post['accepted'] = session['state'] in ['accepted', 'confirmed']
             
         post['keynote'] = session['is_featured']
-        #post['details'] = session['details']
         post['track'] = session['slot_count']
         post['title'] = session['title']
         post['code'] = session['code']
 
         post['details'] = True
-
-        NYC = timezone('America/New_York')        
+    
         MUC = timezone('Europe/Berlin')        
-        post['timeslot'] = {}
-        post['timeslot']['start'] = session['slot']['start'] # convert to timestamp
-        dt_start = dateutil.parser.parse(session['slot']['start'])
-        dt_start_here = dt_start.astimezone(MUC)
-        post['timeslot']['start'] = dt_start_here
+        post['timeslot'] = {
+            'start': dateutil.parser.parse(session['slots'][-1]['start']).astimezone(MUC),
+            'end': dateutil.parser.parse(session['slots'][-1]['end']).astimezone(MUC),
+            'duration': session['duration']
+        }
 
-        post['timeslot']['end'] = session['slot']['end'] # convert to timestamp
-        #end_here = pytz.utc.localize(dateutil.parser.parse(session['Start']))
-        dt_end = dateutil.parser.parse(session['slot']['end'])
-        dt_end_here = dt_end.astimezone(MUC)
-        post['timeslot']['end'] = dt_end_here
-        post['timeslot']['duration'] = session['duration']
-        
-        session_speakers = []
-        for sess_speaker in session['speakers']:
+        post['speakers'] = [
+            {
+                "name": sess_speaker["name"],
+                "bio": sess_speaker['biography'],
+                "photo": speaker_photos[sess_speaker['code']] or False,
+                "handle": False
+            } 
+            for sess_speaker in session['speakers'] 
+        ] 
 
-            for speaker in speakers:
-
-                if 'code' not in speaker:
-                    pprint(speaker)
-                    input('speaker')
-
-                elif 'code' not in sess_speaker:
-                    pprint(sess_speaker)
-                    pprint(session)
-                    input('sess_speaker')
-
-                print(f'{sess_speaker["code"]} vs {speaker["code"]}')
-                if speaker['code'] == sess_speaker['code']:
-                    session_speaker = {}
-                    session_speaker['name'] = speaker['name']
-                    session_speaker['handle'] = False # speaker[''] This is not exported from pretalx
-                    session_speaker['bio'] = speaker['biography']
-                    session_speaker['photo'] = speaker['avatar']
-                    session_speakers.append(session_speaker)
-
-                    break
-
-        post['speakers'] = session_speakers
-
-        if session['track']['en'] == 'Workshops':
-            post_folder = '_workshops'
-        elif session['track']['en'] == 'Talks':
-            post_folder = '_talks'
+        if session_type in ['workshop', 'talk']:
+            post_folder = '_' + session_type + 's'
         else:
-            post_folder = session['track']['en']
-            print('#'*10)
-            print(post_folder)
+            post_folder = session['track']['name']['en']
+            print(f"[!] Check post_folder: {post_folder}")
             input()
 
-        if session['slot']['room']['en'] == 'Hochschule München - R0.007':
-            post['track'] = 1
-        elif session['slot']['room']['en'] == 'Hochschule München - R1.006':
-            post['track'] = 2
-        elif session['slot']['room']['en'] == 'Hochschule München - R1.008':
-            post['track'] = 3
-        elif session['slot']['room']['en'] == 'Hochschule München - R1.007':
-            post['track'] = 4
-        elif session['slot']['room']['en'] == 'Hochschule München - R0.010':
-            post['track'] = 5
-        elif session['slot']['room']['en'] == 'WestIn - Munich':
-            post['track'] = 1
-        elif session['slot']['room']['en'] == 'WestIn - Partenkirchen':
-            post['track'] = 2
+        session_name = session['slots'][-1]['room']['name']['en']
+
+        ws_tracks = [
+            "Hochschule München - R1.006",
+            "Hochschule München - R1.007",
+            "Hochschule München - R1.008",
+            "Hochschule München - R0.004",
+            "Hochschule München - R0.006",
+            "Hochschule München - R0.007",
+            "Hochschule München - R0.Foyer",
+            "Hochschule München - R1.Galerie",
+            
+        ]
+        conf_tracks = [
+            "WestIn - Munich",
+            "WestIn - Partenkirchen",
+        ]
+        post['room'] = session_name
+
+        if session_name in ws_tracks:
+            post['track'] = ws_tracks.index(session_name) + 1
+        elif session_name in conf_tracks:
+            post['track'] = conf_tracks.index(session_name) + 1
         else:
-            post['track'] = session['slot']['room']['en']
-            print('#'*10)
-            print(frontmatter.dumps(post))
+            print(f"[!] Check post track {session_name}")
             input()
 
 
@@ -285,26 +219,17 @@ def main():
         else:
             track_cnt[post_folder][post['track']] += 1
 
-        #print('#'*10)
-        #pprint(post)
-        #input()
-        #print('#'*10)
-        #print(frontmatter.dumps(post))
-
         # Sort by file name? {slot}-{talkno}_{title}.md
         session_id = track_cnt[post_folder][post['track']]
-        #filename = f"{post['track']:03}-{session_id:02}_{slugify(post['title'])}.md"
         filename = f"{post['track']:03}-{session_id:02}_{post['code']}_{slugify(post['title'])}.md"
 
         filepath = f'{post_folder}/{filename}'
-        print('#'*10)
         print(filepath)
-        #input()
+
         # Check if session exists
-        #if not os.path.exists(filepath):
         with open(filepath, 'w', encoding="utf8") as fh:
             
-            print(frontmatter.dumps(post))
+            #print(frontmatter.dumps(post))
             fh.write(frontmatter.dumps(post))
 
 if __name__ == '__main__':
