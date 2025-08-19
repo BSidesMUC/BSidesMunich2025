@@ -5,15 +5,7 @@ layout: default
 <!-- Wrapper Start -->
 <section id="agenda">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
- 
-{{ content }}
 
-        </div>
-      </div><!-- .col-md-12 close -->
-    </div>
 
 {% if site.workshops.size > 0 %}
     <div class="row">
@@ -34,54 +26,44 @@ layout: default
     </div>
 
     <div class="row">
-       
-{% for track in (1..5) %}
+
+{% assign tracks = site.workshops | sort: "room" | map: "track" | uniq %}
+{% assign rooms = site.workshops | sort: "room" | map: "room" | uniq %}
+
+{% for track in (1..tracks.size) %}
+  {% assign i = track | minus: 1 %}
+    <!-- {{ tracks[i] }} {{ rooms[i] }} -->
       <div class="p-4 col-lg-3 col-md-4">
         <div class="card">
           <div class="card-block text-center card-primary p-2">
-            {% if track == 1 %}
-              <h2>R0.009</h2>
-            {% elsif track == 2 %}
-              <h2>R1.006 </h2>
-            {% elsif track == 3 %}
-              <h2>R1.008 </h2>
-            {% elsif track == 4 %}
-              <h2>R1.007 </h2>
-            {% elsif track == 5 %}
-              <h2>R0.010 </h2>
-            {% else %}
-              <h2>Room {{ track }}</h2>
-            {% endif %}
+              <h4>{{ rooms[i] | split: " - " | last }}</h4>
           </div>
         </div>
           <ul class="list-group list-group-flush">
-
-{% assign talks = site.workshops | where: "track",track | where: "accepted",true | sort: 'timeslot.start' %}
-{% for talk in talks %}
-{% assign start = talk.timeslot.start | date: '%H:%M' %}
-{% assign end = talk.timeslot.end | date: '%H:%M' %}
-
-{% assign speakers = talk.speakers | map: 'name' %}
-{% assign speakers_string = speakers | join: " & " %}
-
+  {% assign talks = site.workshops | where: "track",tracks[i] | where: "accepted",true | sort: 'timeslot.start' %}
+  {% for talk in talks %}
+    {% assign start = talk.timeslot.start | date: '%H:%M' %}
+    {% assign end = talk.timeslot.end | date: '%H:%M' %}
+    {% assign speakers = talk.speakers | map: 'name' %}
+    {% assign speakers_string = speakers | join: " & " %}
     <li class="list-group-item">
     {% if talk.details %}
       <a href="{{ talk.url | relative_url }}">
         <i class="mx-auto fa d-inline fa-clock-o text-secondary"></i>&nbsp;{{ start }} - {{ end }}<br>
         <b>{{ talk.title }}</b><br>
-        <i>{{ speakers_string }}</i>
+        <div><i class="mx-auto fa d-inline fa fa-user text-secondary"></i>&nbsp;<i>{{ speakers_string }}</i></div>
       </a>
     {% else %}
       <i class="mx-auto fa d-inline fa-clock-o text-secondary"></i>&nbsp;{{ start }} - {{ end }}<br>
-      <b>{{ talk.title }}</b><br>
-      <i>{{ speakers_string }}</i>
+      <b>{{ talk.title }}</b><br>  
+      <div><i class="mx-auto fa d-inline fa fa-user text-secondary"></i>&nbsp;<i>{{ speakers_string }}</i></div>
     {% endif %}
   </li>
-{% endfor %}  
- 
-          </ul>
+  {% endfor %}
+            </ul>
         </div>
-{% endfor %}  
+{% endfor %}
+ 
       </div> 
 {% endif %}
     
@@ -117,11 +99,11 @@ layout: default
         <div class="card">
           <div class="card-block text-center card-primary p-2">
           {% if track == 1 %}
-            <h2>Munich</h2>
+            <h4>Munich</h4>
           {% elsif track == 2 %}
-            <h2>Partenkirchen</h2>
+            <h4>Partenkirchen</h4>
           {% else %}
-            <h2>Track {{ track }}</h2>
+            <h4>Track {{ track }}</h4>
           {% endif %}
           </div>
         </div>
@@ -181,5 +163,15 @@ layout: default
     </div>
 {% endif %}
  
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+ 
+{{ content }}
+
+        </div>
+      </div><!-- .col-md-12 close -->
+    </div>
+
   </div>
 </section>
