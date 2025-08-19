@@ -52,12 +52,12 @@ layout: default
       
         <div class="col-md-9 col-xs-12">
           <div class="block">
-            <p>
+            
               <h2>{{ talk_speaker.name }}</h2>
       {% if talk_speaker.handle %}
           <a href="https://www.twitter.com/{{ talk_speaker.handle  }}" class="fa fa-twitter">@{{ talk_speaker.handle }}</a>          
       {% endif %}
-            </p>
+            
       {{ talk_speaker.bio | markdownify }}
           </div>
         </div>
@@ -71,7 +71,7 @@ layout: default
       <div class="row">
         <div class="col-md-2 col-md-offset-1 col-xs-8 col-xs-offset-3">
           <div class="block speaker-image">
-      {% if talk_speaker.photo  %}
+      {% if talk_speaker.photo %}
             <img src="{{ talk_speaker.photo | relative_url }}">          
       {% else %}
             <img src="/img/nemo.png">
@@ -81,12 +81,12 @@ layout: default
       
         <div class="col-md-9 col-xs-12">
           <div class="block">
-            <p>
+            
               <h2>{{ talk_speaker.name }}</h2>
       {% if talk_speaker.handle %}
           <a href="https://www.twitter.com/{{ talk_speaker.handle  }}" class="fa fa-twitter">@{{ talk_speaker.handle }}</a>          
       {% endif %}
-            </p>
+            
       {{ talk_speaker.bio | markdownify }}
           </div>
         </div>
