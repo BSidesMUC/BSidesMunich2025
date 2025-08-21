@@ -2,17 +2,17 @@
   url: /
 - title: Sponsors
   url: /sponsors/
-#- title: Speakers
-#  url: /speakers/
-#- title: Agenda
-#  url: /agenda/
+- title: Speakers
+  url: /speakers/
+- title: Agenda
+  url: /agenda/
 - title: Tickets
   url: /tickets/
 - title: Code of Conduct
   url: /codeofconduct/
 - title: Organizers
   url: /organizers/
-- title: Call for Papers
-  url: /callforpapers
+#- title: Call for Papers
+#  url: /callforpapers
 - title: CFP Review Board
   url: /reviewers
