@@ -24,7 +24,7 @@ We’ve introduced the Business Ticket this year for individuals and companies w
 ### Workshops
 In addition to the main conference, BSides Munich will host a Workshop Day featuring hands-on, in-depth sessions led by industry experts.
 Each seat costs €19,00 incl. MwSt. Workshops will run between 2 and 8 hours, depending on the topic. Coffee breaks and lunch are included. The full workshop schedule will be announced soon.  
-* **Registration for the workshop tickets will open on TBA.**
+* **Registration for the workshop tickets will open on August 25, 2025.**
 
 ## Questions
 For questions please get in contact with tickets (at) bsidesmunich (dot) org.
