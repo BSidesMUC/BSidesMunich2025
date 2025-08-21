@@ -56,7 +56,9 @@ layout: default
     {% else %}
       <i class="mx-auto fa d-inline fa-clock-o text-secondary"></i>&nbsp;{{ start }} - {{ end }}<br>
       <b>{{ talk.title }}</b><br>  
+      {% if talk.speakers %}
       <div><i class="mx-auto fa d-inline fa fa-user text-secondary"></i>&nbsp;<i>{{ speakers_string }}</i></div>
+      {% endif %}  
     {% endif %}
   </li>
   {% endfor %}
