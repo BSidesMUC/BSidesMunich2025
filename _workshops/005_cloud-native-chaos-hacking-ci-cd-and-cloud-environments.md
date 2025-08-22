@@ -7,6 +7,14 @@ keynote: false
 layout: workshop
 room: Hochschule München - R0.006
 speakers:
+- bio: Samuel Hopstock is a software engineer at Guardsquare, where he was one of
+    the first engineers working on AppSweep, a mobile app security testing tool. Initially,
+    he contributed to the Java bytecode analysis engine for Android apps. Since then
+    he has shifted his focus to analyzing and protecting native iOS, Android, and
+    Flutter binaries.
+  handle: false
+  name: Samuel Hopstock
+  photo: img/speakers/3DYCUB.jpg
 - bio: Daniel Schwendner is a DevOps Engineer with a strong passion for Cyber Security.
     With a background in mobile application security and hardware security, he participates
     in bug bounty hunting and shares his security knowledge online.
