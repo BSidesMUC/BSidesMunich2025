@@ -2,7 +2,7 @@
 accepted: true
 code: 9QBYCN
 details: true
-id: 1312628
+id: 1312649
 keynote: false
 layout: workshop
 room: Hochschule München - R1.Galerie
@@ -16,8 +16,8 @@ speakers:
   name: Georg Jobst
   photo: img/speakers/RKPPZL.jpg
 timeslot:
-  duration: 240
-  end: 2025-11-15 13:00:00+01:00
+  duration: 180
+  end: 2025-11-15 12:00:00+01:00
   start: 2025-11-15 09:00:00+01:00
 title: Introduction to Physical Security Testing
 track: 8
