@@ -2,7 +2,6 @@
 accepted: true
 code: 7WB7FV
 details: true
-id: 1312634
 keynote: false
 layout: workshop
 room: Hochschule München - R0.Foyer

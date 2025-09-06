@@ -2,7 +2,6 @@
 accepted: true
 code: VFXEQD
 details: true
-id: 1312632
 keynote: false
 layout: workshop
 room: Hochschule München - R0.004

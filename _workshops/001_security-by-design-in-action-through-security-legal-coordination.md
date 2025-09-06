@@ -2,7 +2,6 @@
 accepted: true
 code: HJZYVB
 details: true
-id: 1312629
 keynote: false
 layout: workshop
 room: Hochschule München - R1.006

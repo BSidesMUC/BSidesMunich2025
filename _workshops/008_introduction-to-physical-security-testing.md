@@ -2,7 +2,6 @@
 accepted: true
 code: 9QBYCN
 details: true
-id: 1312649
 keynote: false
 layout: workshop
 room: Hochschule München - R1.Galerie

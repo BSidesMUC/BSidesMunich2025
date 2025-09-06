@@ -2,7 +2,6 @@
 accepted: true
 code: 3LESRT
 details: true
-id: 1312630
 keynote: false
 layout: workshop
 room: Hochschule München - R1.007

@@ -2,7 +2,6 @@
 accepted: true
 code: 3MMLDQ
 details: true
-id: 1312641
 keynote: false
 layout: workshop
 room: Hochschule München - R0.006

@@ -2,7 +2,6 @@
 accepted: true
 code: QLMT3U
 details: true
-id: 1312635
 keynote: false
 layout: workshop
 room: Hochschule München - R0.007

@@ -2,7 +2,6 @@
 accepted: true
 code: YPQGKD
 details: true
-id: 1312633
 keynote: false
 layout: workshop
 room: Hochschule München - R1.008

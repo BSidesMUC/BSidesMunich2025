@@ -1,7 +1,6 @@
 ---
 accepted: true
 details: false
-id: 1312637
 layout: workshop
 room: Hochschule München - R0.006
 timeslot:

@@ -2,7 +2,6 @@
 accepted: true
 code: DWG3AD
 details: true
-id: 1312642
 keynote: false
 layout: workshop
 room: Hochschule München - R0.007

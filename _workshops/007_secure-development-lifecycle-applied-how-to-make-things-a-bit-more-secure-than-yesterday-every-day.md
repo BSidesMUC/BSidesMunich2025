@@ -2,7 +2,6 @@
 accepted: true
 code: PR3RVK
 details: true
-id: 1312644
 keynote: false
 layout: workshop
 room: Hochschule München - R0.Foyer

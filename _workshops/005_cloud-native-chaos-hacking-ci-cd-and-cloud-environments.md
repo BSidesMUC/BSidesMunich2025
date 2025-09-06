@@ -2,7 +2,6 @@
 accepted: true
 code: TG9YKW
 details: true
-id: 1312631
 keynote: false
 layout: workshop
 room: Hochschule München - R0.006
