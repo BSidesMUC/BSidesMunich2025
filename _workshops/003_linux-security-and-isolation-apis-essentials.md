@@ -27,4 +27,4 @@ title: Linux Security and Isolation APIs essentials
 track: 3
 ---
 
-A workshop on the fundamental building blocks of Linux containers: capabitilies, namespaces and cgroups.
+This full-day workshop provides an overview of the low-level Linux features–capabilities, namespaces, and control groups (cgroups)–that are used to build containers and sandboxes. Beginning with classical privileged programs (set-UID-root programs), we look at how capabilities and namespaces can be used to place processes in “a world of their own” in which they have private instances of various “global” resources. Those features–user namespaces in particular–can also be used to implement the notion of a process that is superuser inside a container while being unprivileged outside the container. Finally, we’ll see how cgroups can be used to limit resource consumption, so that the processes in a container can’t negatively impact other users on the system. You can find some further detail on the workshop content at https://man7.org/training/sisess/sisess_course_outline.html and https://man7.org/training/sisess/.
