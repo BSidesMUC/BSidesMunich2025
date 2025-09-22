@@ -2,7 +2,7 @@
 accepted: true
 code: N78UW9
 details: true
-keynote: false
+keynote: true
 layout: talk
 room: Westin - Munich
 speakers:
