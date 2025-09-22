@@ -11,7 +11,7 @@ layout: default
     {% endfor %}
   {% endif %}
 {% endfor %}
-{% assign keynote_speakers_sorted = keynote_speakers | sort: 'name' %}
+{% assign keynote_speakers_sorted = keynote_speakers | sort: 'name' | uniq %}
 
 
 {% assign speakers = "" | split: ',' %}
@@ -29,7 +29,7 @@ layout: default
     {% endfor %}
   {% endif %}
 {% endfor %}
-{% assign speakers_sorted = speakers | sort: 'name' %}
+{% assign speakers_sorted = speakers | sort: 'name' | uniq %}
 
 <!-- Wrapper Start -->
 <section id="organizers">
