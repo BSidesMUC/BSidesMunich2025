@@ -6,10 +6,14 @@ keynote: true
 layout: talk
 room: Westin - Munich
 speakers:
-- bio: null
+- bio: "David Elze has been breaking things in the name of security for over two decades.
+    After starting his career as a penetration tester at a German premium car manufacturer,
+    he went on to lead international\r\nhacking teams and eventually joined **CODE
+    WHITE** in 2014 as its first technical employee. Today he runs CODE WHITE as CEO
+    but has never lost his passion for the technical side of hacking."
   handle: false
   name: David Elze
-  photo: false
+  photo: img/speakers/EYZTVK.jpg
 timeslot:
   duration: 30
   end: 2025-11-17 17:40:00+01:00
