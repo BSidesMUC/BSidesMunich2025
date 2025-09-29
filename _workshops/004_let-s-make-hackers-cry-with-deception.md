@@ -4,7 +4,7 @@ code: 3VKUJQ
 details: true
 keynote: false
 layout: workshop
-room: Hochschule München - R1.Galerie
+room: Hochschule München - R0.004
 speakers:
 - bio: John Strand has both consulted and taught hundreds of organizations in the
     areas of security, regulatory compliance, and penetration testing.  He is a coveted
@@ -18,7 +18,7 @@ timeslot:
   end: 2025-11-15 18:00:00+01:00
   start: 2025-11-15 14:00:00+01:00
 title: Let's make hackers cry....  With Deception!
-track: 8
+track: 4
 ---
 
 In this worksop we will do 4 labs where you will learn deception techniques you can use in your organization as soon as you get back to work.

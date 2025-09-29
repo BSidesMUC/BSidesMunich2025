@@ -4,7 +4,7 @@ code: PR3RVK
 details: true
 keynote: false
 layout: workshop
-room: Hochschule München - R0.Foyer
+room: Hochschule München - R1.005
 speakers:
 - bio: Lisi found tech as her place to be in 2009 and has grown as a specialized generalist
     ever since. Building great products that deliver value together with great people
@@ -21,8 +21,8 @@ speakers:
   photo: img/speakers/RGVDYJ.jpg
 timeslot:
   duration: 120
-  end: 2025-11-15 16:00:00+01:00
-  start: 2025-11-15 14:00:00+01:00
+  end: 2025-11-15 13:00:00+01:00
+  start: 2025-11-15 11:00:00+01:00
 title: Secure Development Lifecycle Applied - How to Make Things a Bit More Secure
   than Yesterday Every Day
 track: 7

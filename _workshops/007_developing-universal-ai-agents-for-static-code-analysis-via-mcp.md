@@ -4,7 +4,7 @@ code: 7WB7FV
 details: true
 keynote: false
 layout: workshop
-room: Hochschule München - R0.Foyer
+room: Hochschule München - R1.005
 speakers:
 - bio: "Platform Engineer | OSS Contributor\r\n\r\nVlad is a seasoned full-stack developer
     with over a decade of experience building and maintaining scalable B2B platforms,
