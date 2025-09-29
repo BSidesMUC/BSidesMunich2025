@@ -24,8 +24,8 @@ speakers:
   photo: img/speakers/E8PCPX.png
 timeslot:
   duration: 120
-  end: 2025-11-15 11:00:00+01:00
-  start: 2025-11-15 09:00:00+01:00
+  end: 2025-11-15 16:00:00+01:00
+  start: 2025-11-15 14:00:00+01:00
 title: Developing Universal AI Agents for Static Code Analysis via MCP
 track: 7
 ---

@@ -16,8 +16,8 @@ speakers:
   photo: img/speakers/RKPPZL.jpg
 timeslot:
   duration: 180
-  end: 2025-11-15 17:00:00+01:00
-  start: 2025-11-15 14:00:00+01:00
+  end: 2025-11-15 12:00:00+01:00
+  start: 2025-11-15 09:00:00+01:00
 title: Introduction to Physical Security Testing
 track: 7
 ---

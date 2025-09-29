@@ -21,8 +21,8 @@ speakers:
   photo: img/speakers/RGVDYJ.jpg
 timeslot:
   duration: 120
-  end: 2025-11-15 13:00:00+01:00
-  start: 2025-11-15 11:00:00+01:00
+  end: 2025-11-15 18:00:00+01:00
+  start: 2025-11-15 16:00:00+01:00
 title: Secure Development Lifecycle Applied - How to Make Things a Bit More Secure
   than Yesterday Every Day
 track: 7
