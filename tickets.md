@@ -11,9 +11,9 @@ BSides Munich is a free, community-driven cybersecurity conference bringing toge
 
 **Regular Ticket – Free**  
 Full access to the conference at no cost.  Tickets will be released in limited batches on announced dates. Follow us on social media to secure yours!  
-* **Registration for the first batch of tickets will open on September 9, 2025 at 09:00 CEST.**  
-* Registration for the second batch of tickets will open on October 9, 2025 at 9:00 CEST.  
-* Registration for the third batch of tickets will open on TBA.  
+* Registration for the first batch of tickets will open on September 9, 2025 at 09:00 CEST. - ** SOLD OUT **
+* Registration for the second batch of tickets will open on October 9, 2025 at 9:00 CEST. - ** SOLD OUT **
+* **Registration for the third batch of tickets will open on TBA. **
 *Note: The waiting list will open with the last batch of tickets.*
 
 **Business Ticket – €595,00 incl. MwSt. (New this year!)**  
