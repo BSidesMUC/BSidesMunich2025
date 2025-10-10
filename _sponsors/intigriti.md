@@ -1,7 +1,7 @@
 ---
 level: 90 #bronze
-name: BxC Consulting
-logo: /img/sponsors/bxc.jpg
-uri: https://www.bxc-consulting.com/
+name: Intigriti
+logo: /img/sponsors/intigriti.png
+uri: https://www.intigriti.com/
 handle: 
 ---
