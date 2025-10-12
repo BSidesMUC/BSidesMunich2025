@@ -17,6 +17,17 @@ speakers:
   handle: false
   name: Juliane Reimann
   photo: img/speakers/VBBVRJ.jpg
+- bio: "Security Engineer @ FullCyrcle Security\r\n\r\nMoritz Krause has been working
+    in software development since 2010, with a strong focus on building and securing
+    web applications. After completing a degree in computer science and working as
+    a software engineer for many years, he shifted his focus toward cybersecurity
+    in 2024. His current work centers on DevSecOps, backend development, AI security,
+    and threat modeling. Combining deep technical expertise with a strong understanding
+    of the secure software development lifecycle (SDLC), Moritz explores how AI can
+    be leveraged to enhance security practices across modern development environments."
+  handle: false
+  name: Moritz Krause
+  photo: false
 timeslot:
   duration: 180
   end: 2025-11-15 17:00:00+01:00
