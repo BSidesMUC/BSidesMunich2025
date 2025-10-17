@@ -6,6 +6,13 @@ keynote: false
 layout: workshop
 room: Hochschule München - R0.004
 speakers:
+- bio: I am a senior security consultant, founder and a director at the Munich based
+    company secureIO GmbH. With a strong background in application security and building
+    and managing application security programs, I am passionate about all things related
+    to AppSec and DevSecOps.
+  handle: false
+  name: Michael Helwig
+  photo: img/speakers/VTB8G9.jpg
 - bio: "Benjamin began his career as a Cyber Security Consultant and has since developed
     into a specialist at the intersection of machine learning and security. His work
     focuses on the practical evaluation and implementation of the **OWASP Top 10**
