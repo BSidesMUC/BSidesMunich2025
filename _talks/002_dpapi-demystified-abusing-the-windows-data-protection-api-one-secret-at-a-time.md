@@ -6,7 +6,12 @@ keynote: false
 layout: talk
 room: Westin - Partenkirchen
 speakers:
-- bio: Senior Penetration Tester @ CODE WHITE GmbH
+- bio: Daniel Küppers has been professionally breaking things for over nine years.
+    As a Red Teamer at CODE WHITE, he specializes in conducting Red Team Assessments
+    to simulate real-world attacks and enhance an organization's defenses. Daniel
+    also works closely with Blue Teams through Purple Teaming exercises to improve
+    their detection and mitigation capabilities, fostering stronger cybersecurity
+    practices.
   handle: false
   name: Daniel Küppers
   photo: false
