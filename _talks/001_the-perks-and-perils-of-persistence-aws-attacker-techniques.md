@@ -15,7 +15,7 @@ speakers:
     in cloud infrastructure.
   handle: false
   name: Oisin B
-  photo: img/speakers/JEQUDB.png
+  photo: img/speakers/JEQUDB.webp
 timeslot:
   duration: 30
   end: 2025-11-17 15:00:00+01:00

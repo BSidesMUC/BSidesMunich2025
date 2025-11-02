@@ -18,7 +18,7 @@ speakers:
     she plays indoor volleyball or delves into computer games and stories of all kinds.
   handle: false
   name: Lisi Hocke
-  photo: img/speakers/RGVDYJ.jpg
+  photo: img/speakers/RGVDYJ.webp
 timeslot:
   duration: 120
   end: 2025-11-15 18:00:00+01:00

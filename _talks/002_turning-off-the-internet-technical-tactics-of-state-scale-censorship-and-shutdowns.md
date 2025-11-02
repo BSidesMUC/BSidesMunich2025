@@ -12,7 +12,7 @@ speakers:
     used—and misused—by state actors to control access to information.
   handle: false
   name: Reza Sharifi
-  photo: img/speakers/A9ACVG.jpg
+  photo: img/speakers/A9ACVG.webp
 timeslot:
   duration: 30
   end: 2025-11-17 16:00:00+01:00

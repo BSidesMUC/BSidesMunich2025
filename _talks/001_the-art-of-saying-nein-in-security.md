@@ -19,7 +19,7 @@ speakers:
     the European Commission."
   handle: false
   name: Martin Brunner
-  photo: img/speakers/L9NAPL.jpg
+  photo: img/speakers/L9NAPL.webp
 timeslot:
   duration: 30
   end: 2025-11-17 09:40:00+01:00

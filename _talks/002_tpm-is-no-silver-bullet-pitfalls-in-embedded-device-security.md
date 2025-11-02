@@ -11,7 +11,7 @@ speakers:
     identifying vulnerabilities in various consumer and enterprise software.
   handle: false
   name: David Gstir
-  photo: img/speakers/3ZJHLZ.jpg
+  photo: img/speakers/3ZJHLZ.webp
 timeslot:
   duration: 30
   end: 2025-11-17 11:00:00+01:00

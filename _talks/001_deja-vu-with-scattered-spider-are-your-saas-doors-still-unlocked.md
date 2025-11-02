@@ -18,7 +18,7 @@ speakers:
     Faculty of Computer and Electrical Engineering (2023)."
   handle: false
   name: Andi Ahmeti
-  photo: img/speakers/YK3CBN.jpg
+  photo: img/speakers/YK3CBN.webp
 - bio: "Abian Morina is a Threat Researcher on Permiso Security’s P0 Labs team. He
     began hacking by modifying video games, a curiosity that evolved into a cybersecurity
     career. As a senior member of the Kosova Cyber Team, he proudly represents his

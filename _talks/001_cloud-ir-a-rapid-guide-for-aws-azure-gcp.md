@@ -17,7 +17,7 @@ speakers:
     a Master’s in Cybersecurity, and is a Chevening Fellow (UK Defence Academy).
   handle: false
   name: Erblind Morina
-  photo: img/speakers/R9DRKT.jpg
+  photo: img/speakers/R9DRKT.webp
 timeslot:
   duration: 30
   end: 2025-11-17 17:10:00+01:00

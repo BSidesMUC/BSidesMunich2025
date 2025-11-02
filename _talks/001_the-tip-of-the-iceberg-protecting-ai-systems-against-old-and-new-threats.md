@@ -12,7 +12,7 @@ speakers:
     to AppSec and DevSecOps.
   handle: false
   name: Michael Helwig
-  photo: img/speakers/VTB8G9.jpg
+  photo: img/speakers/VTB8G9.webp
 - bio: "Benjamin began his career as a Cyber Security Consultant and has since developed
     into a specialist at the intersection of machine learning and security. His work
     focuses on the practical evaluation and implementation of the **OWASP Top 10**
@@ -25,7 +25,7 @@ speakers:
     gap between research and secure implementation."
   handle: false
   name: Benjamin Altmiks
-  photo: img/speakers/8HQCQV.jpg
+  photo: img/speakers/8HQCQV.webp
 timeslot:
   duration: 30
   end: 2025-11-17 16:30:00+01:00

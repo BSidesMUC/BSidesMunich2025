@@ -17,7 +17,7 @@ speakers:
     depending on the time of the day."
   handle: false
   name: Javier Vazquez Vidal
-  photo: img/speakers/ZMWHHL.png
+  photo: img/speakers/ZMWHHL.webp
 timeslot:
   duration: 240
   end: 2025-11-15 18:00:00+01:00

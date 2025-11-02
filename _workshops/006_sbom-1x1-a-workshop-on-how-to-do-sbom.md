@@ -16,7 +16,7 @@ speakers:
     hosted by the OpenSSF."
   handle: false
   name: Marius Biebel
-  photo: img/speakers/3XHZYK.jpg
+  photo: img/speakers/3XHZYK.webp
 timeslot:
   duration: 240
   end: 2025-11-15 13:00:00+01:00

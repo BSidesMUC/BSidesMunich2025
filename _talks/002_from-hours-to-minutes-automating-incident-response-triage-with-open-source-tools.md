@@ -17,7 +17,7 @@ speakers:
     forensic tools."
   handle: false
   name: Markus Einarsson
-  photo: img/speakers/XXEWP9.jpg
+  photo: img/speakers/XXEWP9.webp
 timeslot:
   duration: 30
   end: 2025-11-17 10:30:00+01:00

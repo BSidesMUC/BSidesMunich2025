@@ -16,7 +16,7 @@ speakers:
     2024, she has been a core member of the OWASP Security Champions Guide Community."
   handle: false
   name: Juliane Reimann
-  photo: img/speakers/VBBVRJ.jpg
+  photo: img/speakers/VBBVRJ.webp
 - bio: "Security Engineer @ FullCyrcle Security\r\n\r\nMoritz Krause has been working
     in software development since 2010, with a strong focus on building and securing
     web applications. After completing a degree in computer science and working as

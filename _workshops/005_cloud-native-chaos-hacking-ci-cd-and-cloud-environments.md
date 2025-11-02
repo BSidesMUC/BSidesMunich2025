@@ -13,13 +13,13 @@ speakers:
     Flutter binaries.
   handle: false
   name: Samuel Hopstock
-  photo: img/speakers/3DYCUB.jpg
+  photo: img/speakers/3DYCUB.webp
 - bio: Daniel Schwendner is a DevOps Engineer with a strong passion for Cyber Security.
     With a background in mobile application security and hardware security, he participates
     in bug bounty hunting and shares his security knowledge online.
   handle: false
   name: Daniel Schwendner
-  photo: img/speakers/ZCJEBB.jpg
+  photo: img/speakers/ZCJEBB.webp
 timeslot:
   duration: 240
   end: 2025-11-15 13:00:00+01:00

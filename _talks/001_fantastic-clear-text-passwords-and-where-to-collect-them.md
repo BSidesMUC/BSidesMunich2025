@@ -15,7 +15,7 @@ speakers:
     has spoken at numerous conferences, sharing his expertise with audiences worldwide.
   handle: false
   name: Stephan Berger
-  photo: img/speakers/C7AHN8.jpg
+  photo: img/speakers/C7AHN8.webp
 timeslot:
   duration: 30
   end: 2025-11-17 10:30:00+01:00

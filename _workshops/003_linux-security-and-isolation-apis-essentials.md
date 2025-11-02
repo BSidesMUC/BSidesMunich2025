@@ -18,7 +18,7 @@ speakers:
     Europe, North America, and occasionally further afield.
   handle: false
   name: Michael Kerrisk
-  photo: img/speakers/XRZ3WN.jpg
+  photo: img/speakers/XRZ3WN.webp
 timeslot:
   duration: 480
   end: 2025-11-15 17:00:00+01:00

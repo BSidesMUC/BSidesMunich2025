@@ -16,7 +16,7 @@ speakers:
     and knowledge exchange.\r\n\r\nhttps://www.linkedin.com/in/joaocmendonca/"
   handle: false
   name: Joao Collier de Mendonca
-  photo: img/speakers/VWS3R3.jpg
+  photo: img/speakers/VWS3R3.webp
 timeslot:
   duration: 30
   end: 2025-11-17 11:00:00+01:00

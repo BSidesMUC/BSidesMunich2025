@@ -12,7 +12,7 @@ speakers:
     the world with my friends."
   handle: false
   name: Julia Bezdziel
-  photo: img/speakers/RSGCEZ.jpg
+  photo: img/speakers/RSGCEZ.webp
 timeslot:
   duration: 30
   end: 2025-11-17 13:00:00+01:00

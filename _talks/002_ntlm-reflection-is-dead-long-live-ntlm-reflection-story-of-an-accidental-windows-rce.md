@@ -20,7 +20,7 @@ speakers:
     improving his knowledge in these fields.
   handle: false
   name: Wil
-  photo: img/speakers/RSK9M3.jpg
+  photo: img/speakers/RSK9M3.webp
 timeslot:
   duration: 30
   end: 2025-11-17 16:30:00+01:00

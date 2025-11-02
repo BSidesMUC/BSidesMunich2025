@@ -13,7 +13,7 @@ speakers:
     Flutter binaries.
   handle: false
   name: Samuel Hopstock
-  photo: img/speakers/3DYCUB.jpg
+  photo: img/speakers/3DYCUB.webp
 timeslot:
   duration: 30
   end: 2025-11-17 12:30:00+01:00

@@ -2,7 +2,7 @@
 accepted: true
 code: PKWBBN
 details: true
-keynote: true
+keynote: false
 layout: talk
 room: Westin - Munich
 speakers:
@@ -13,7 +13,7 @@ speakers:
     but has never lost his passion for the technical side of hacking."
   handle: false
   name: David Elze
-  photo: img/speakers/EYZTVK.jpg
+  photo: img/speakers/EYZTVK.webp
 timeslot:
   duration: 30
   end: 2025-11-17 17:40:00+01:00

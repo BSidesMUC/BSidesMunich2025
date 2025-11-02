@@ -16,7 +16,7 @@ speakers:
     2024, she has been a core member of the OWASP Security Champions Guide Community."
   handle: false
   name: Juliane Reimann
-  photo: img/speakers/VBBVRJ.jpg
+  photo: img/speakers/VBBVRJ.webp
 timeslot:
   duration: 30
   end: 2025-11-17 14:30:00+01:00

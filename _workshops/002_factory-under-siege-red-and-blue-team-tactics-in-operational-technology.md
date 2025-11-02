@@ -15,11 +15,11 @@ speakers:
     by leading workshops and delivering presentations at industry conferences.​"
   handle: false
   name: Sarah Mader
-  photo: img/speakers/LQZ3ZD.jpg
+  photo: img/speakers/LQZ3ZD.webp
 - bio: null
   handle: false
   name: Nick Foulon
-  photo: img/speakers/ANWRGD.jpg
+  photo: img/speakers/ANWRGD.webp
 timeslot:
   duration: 480
   end: 2025-11-15 17:00:00+01:00

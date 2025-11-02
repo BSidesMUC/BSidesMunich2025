@@ -13,7 +13,7 @@ speakers:
     Access Control (NAC) or a closed door, Georg thrives to bypass it.
   handle: false
   name: Georg Jobst
-  photo: img/speakers/RKPPZL.jpg
+  photo: img/speakers/RKPPZL.webp
 timeslot:
   duration: 180
   end: 2025-11-15 12:00:00+01:00

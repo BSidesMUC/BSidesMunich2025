@@ -13,7 +13,7 @@ speakers:
     defenses against cyber-attacks.
   handle: false
   name: Alex Holden
-  photo: img/speakers/SQ7VXR.jpg
+  photo: img/speakers/SQ7VXR.webp
 timeslot:
   duration: 30
   end: 2025-11-17 14:30:00+01:00

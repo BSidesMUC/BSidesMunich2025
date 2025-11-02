@@ -12,7 +12,7 @@ speakers:
     Penetration Testing Execution Standard and 20 Critical Controls frameworks.
   handle: false
   name: John Strand
-  photo: img/speakers/JLLNK7.jpg
+  photo: img/speakers/JLLNK7.webp
 timeslot:
   duration: 240
   end: 2025-11-15 18:00:00+01:00
