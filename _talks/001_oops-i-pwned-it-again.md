@@ -2,7 +2,7 @@
 accepted: true
 code: PKWBBN
 details: true
-keynote: false
+keynote: true
 layout: talk
 room: Westin - Munich
 speakers:
