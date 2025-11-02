@@ -21,7 +21,16 @@ speakers:
     and a three-time hackathon winner."
   handle: false
   name: Vlad Dyachenko
-  photo: img/speakers/E8PCPX.png
+  photo: img/speakers/E8PCPX.webp
+- bio: Sunil is a seasoned cybersecurity professional with over 15 years of experience
+    in the field. Currently engaged in advanced threat operations involving SPIDERs,
+    CHOLLIMAs, and BEARs, he brings deep expertise in automation, SOC operations,
+    and threat hunting. Though Python is his current weapon of choice, his background
+    spans Ruby, C, C#, and Rust. His sessions are known for their practical insights
+    and lively, hands-on approach.
+  handle: false
+  name: Sunil Kumar
+  photo: img/speakers/KJBM9C.webp
 timeslot:
   duration: 120
   end: 2025-11-15 16:00:00+01:00
