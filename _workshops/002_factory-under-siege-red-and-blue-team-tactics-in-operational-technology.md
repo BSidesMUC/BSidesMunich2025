@@ -21,8 +21,8 @@ speakers:
   name: Nick Foulon
   photo: img/speakers/ANWRGD.webp
 timeslot:
-  duration: 480
-  end: 2025-11-15 17:00:00+01:00
+  duration: 540
+  end: 2025-11-15 18:00:00+01:00
   start: 2025-11-15 09:00:00+01:00
 title: 'Factory Under Siege: Red and Blue Team Tactics in Operational Technology'
 track: 2

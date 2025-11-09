@@ -20,8 +20,8 @@ speakers:
   name: Michael Kerrisk
   photo: img/speakers/XRZ3WN.webp
 timeslot:
-  duration: 480
-  end: 2025-11-15 17:00:00+01:00
+  duration: 540
+  end: 2025-11-15 18:00:00+01:00
   start: 2025-11-15 09:00:00+01:00
 title: Linux Security and Isolation APIs essentials
 track: 3

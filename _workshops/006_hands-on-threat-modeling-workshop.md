@@ -29,8 +29,8 @@ speakers:
   name: Moritz Krause
   photo: false
 timeslot:
-  duration: 180
-  end: 2025-11-15 17:00:00+01:00
+  duration: 240
+  end: 2025-11-15 18:00:00+01:00
   start: 2025-11-15 14:00:00+01:00
 title: Hands-on Threat Modeling Workshop
 track: 6
