@@ -27,5 +27,15 @@ title: 'From Hours to Minutes: Automating Incident Response Triage with Open-Sou
 track: 2
 ---
 
-Learn how to automate incident response triage using open-source tools.
-This talk shows how to go from forensic collection to collaborative analysis in minutes, with real-world workflows and cloud-based automation.
+Traditional forensic acquisitions create bottlenecks in incident response, requiring specialized expertise and significant time that delays investigations.
+This presentation introduces an automated forensic triage workflow using open-source tools to accelerate response operations.
+
+The workflow utilizes a Velociraptor offline collector to acquire forensic triage images, automatically uploaded to cloud storage.
+This triggers an OpenRelik workflow that processes triage data using tools like Hayabusa and Plaso/log2timeline, with AI-powered analysis and summarization.
+The processed output is uploaded to Timesketch for collaborative analysis.
+
+Several DFIR datasets will be used to show the automation pipeline from initial collection to timeline analysis.
+The workflow reduces time-to-analysis from hours to minutes while maintaining forensic integrity.
+
+Attendees will learn to implement automated triage workflows and integrate multiple open-source tools into investigation pipelines.
+This targets incident responders, digital forensics practitioners and anyone in the security community looking to streamline forensic operations.
