@@ -14,7 +14,7 @@ speakers:
     practices.
   handle: false
   name: Daniel Küppers
-  photo: false
+  photo: img/speakers/BWNAMT.webp
 timeslot:
   duration: 30
   end: 2025-11-17 15:00:00+01:00
