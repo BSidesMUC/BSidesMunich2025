@@ -39,4 +39,4 @@ title: Developing Universal AI Agents for Static Code Analysis via MCP
 track: 7
 ---
 
-Learn how to build a universal, AI-assisted security agent using MCP to integrate multiple static analysis tools, generate vulnerability reports, suggest fixes, and produce ready-to-use secure code.
+Learn how to build a universal, AI-assisted security agent using MCP to integrate multiple static analysis tools, generate vulnerability reports, suggest fixes, and produce ready-to-use secure code. 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
